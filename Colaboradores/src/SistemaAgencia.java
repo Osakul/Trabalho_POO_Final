@@ -18,7 +18,7 @@ public class SistemaAgencia {
         
         for (Colaborador c : listaColaboradores) {
            
-            if (c.getLogin().equals(login) && c.checarSenha(senha)) {
+            if (c.getLogin().equals(login) && c.autenticar(senha)) {
                 return c; 
             }
         }
@@ -31,7 +31,7 @@ public class SistemaAgencia {
         System.out.println("Colaborador " + novoColaborador.getNome() + " cadastrado!");
     }
     
-    public Colaborador buscarColaboradorPorId(int id) {
+    public Colaborador buscarColaborador(int id) {
         for (Colaborador c : listaColaboradores) {
             if (c.getId() == id) {
                 return c;
@@ -39,9 +39,18 @@ public class SistemaAgencia {
         }
         return null;
     }
+
+    public Colaborador buscarColaborador(String nome){
+        for(Colaborador c : listaColaboradores){
+            if(c.getNome().equalsIgnoreCase(nome)){
+                return c;
+            }
+        }
+        return null;    
+    }
     
     public void excluirColaborador(int id) {
-        Colaborador c = buscarColaboradorPorId(id);
+        Colaborador c = buscarColaborador(id);
         if (c != null) {
             this.listaColaboradores.remove(c);
             System.out.println(c.getNome() + " removido.");

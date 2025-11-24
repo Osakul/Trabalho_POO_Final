@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 //Denovo extende a classe Colaboradores par a Classe gerente
 
 public class Gerente extends Colaborador {
@@ -8,7 +11,15 @@ public class Gerente extends Colaborador {
 //Dashboard
 @Override 
 public void exibirDashboard(){
-    System.out.println("--- Dashboard [Gerente: " + this.nome + "] ---");
+        JOptionPane.showMessageDialog(null, "--- Dashboard [Gerente: " + this.getNome() + "] ---");
+        JOptionPane.showMessageDialog(null, "1. Cadastrar Colaborador");
+        JOptionPane.showMessageDialog(null, "2. Editar Colaborador");
+        JOptionPane.showMessageDialog(null, "3. Excluir Colaborador");    
+        JOptionPane.showMessageDialog(null, "4. Ver Relatórios de Vendas");
+        JOptionPane.showMessageDialog( null, "5. Sair (Logout)");
+
+
+        System.out.println("--- Dashboard [Gerente: " + this.getNome() + "] ---");
         System.out.println("1. Cadastrar Colaborador");
         System.out.println("2. Editar Colaborador");
         System.out.println("3. Excluir Colaborador");

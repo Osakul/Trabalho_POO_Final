@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class SistemaFornecedores {
 
     private List<Fornecedor> lista = new ArrayList<>();
-    private List<List<Servico>> servicosFornecedor = new ArrayList<>();
+    // private List<List<Servico>> servicosFornecedor = new ArrayList<>();
 
     // CADASTRAR
     public void cadastrarFornecedor() {
@@ -23,7 +23,7 @@ public class SistemaFornecedores {
         }
 
         lista.add(f);
-        servicosFornecedor.add(new ArrayList<>());
+        // servicosFornecedor.add(new ArrayList<>());
 
         JOptionPane.showMessageDialog(null, "Fornecedor cadastrado com sucesso!");
     }
@@ -47,7 +47,7 @@ public class SistemaFornecedores {
         if (f == null) return;
 
         int index = lista.indexOf(f);
-        List<Servico> servicos = servicosFornecedor.get(index);
+        List<Servico> servicos = f.getServicos(); //servicosFornecedor.get(index);
 
         boolean temServicoAtivo = servicos.stream().anyMatch(Servico::isAtivo);
 
@@ -58,7 +58,7 @@ public class SistemaFornecedores {
         }
 
         lista.remove(index);
-        servicosFornecedor.remove(index);
+        // servicosFornecedor.remove(index);
 
         JOptionPane.showMessageDialog(null, "Fornecedor excluído!");
     }
@@ -89,7 +89,7 @@ public class SistemaFornecedores {
 
         int index = lista.indexOf(f);
         String nomeServico = JOptionPane.showInputDialog("Nome do serviço:");
-        servicosFornecedor.get(index).add(new Servico(nomeServico));
+        f.adicionarServico(new Servico(nomeServico)); // Versao Antiga -> servicosFornecedor.get(index).add(new Servico(nomeServico));
 
         JOptionPane.showMessageDialog(null, "Serviço associado!");
     }

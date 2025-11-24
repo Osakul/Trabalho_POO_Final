@@ -1,8 +1,8 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        //Scanner scanner = new Scanner(System.in);
         SistemaAgencia sistema = new SistemaAgencia();
             //Usuarios de testes
         Gerente gerente = new Gerente(1, "Ana Silva", "gerente", "123");
@@ -15,26 +15,29 @@ public class Main {
 
         // login principal do sistema
         while (true) {
-            System.out.print("Login: ");
-            String login = scanner.nextLine();
-            System.out.print("Senha: ");
-            String senha = scanner.nextLine();
-                //Tenta autenticação
+            String[] opcoes = {"Login", "Sair"};
+            int escolha = JOptionPane.showOptionDialog(null, "Bem-vindo ao Sistema da Agência",
+                    "Login", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, opcoes, opcoes[0]);
+
+            if (escolha == 1 || escolha == -1) break; // Sai se escolher "Sair" ou fechar a janela
+
+            String login = JOptionPane.showInputDialog("Digite seu Login:");
+            if (login == null) continue; // Se cancelar, volta pro menu
+
+            String senha = JOptionPane.showInputDialog("Digite sua Senha:");
+            if (senha == null) continue;
+
             Colaborador usuarioLogado = sistema.autenticar(login, senha);
 
             if (usuarioLogado != null) {
-                System.out.println("Login bem-sucedido! Bem-vindo, " + usuarioLogado.getNome());
-                
-                //Polimorfismo , para nao importar se é Gerente ou Agente o java executa igual 
+                JOptionPane.showMessageDialog(null, "Bem-vindo, " + usuarioLogado.getNome());
+                // Aqui chamamos o dashboard. 
+                // NOTA: Você precisará adaptar o 'exibirDashboard' dentro de Gerente/Agente 
+                // para usar janelas também, ou ele vai imprimir no console.
                 usuarioLogado.exibirDashboard(); 
-                
-                System.out.println("Logout realizado.");
-
             } else {
-                System.out.println("Login ou senha incorretos. Tente novamente.");
+                JOptionPane.showMessageDialog(null, "Login ou senha incorretos!", "Erro", JOptionPane.ERROR_MESSAGE);
             }
-            
-            System.out.println("-------------------------------------");
         }
     }
 }

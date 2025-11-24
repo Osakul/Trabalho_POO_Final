@@ -1,4 +1,7 @@
 
+import javax.swing.JOptionPane;
+
+
 
 
 //classe extendida da classe "Colaboradores"
@@ -15,7 +18,7 @@ public class AgenteDeViagem extends Colaborador {
         // Aqui sao outros metodos especificos da classe
     public void registrarVenda (double valorVenda){
         this.totalVendas += valorVenda;
-        System.out.println("Venda de R$ "+ valorVenda + "registrada para " +this.nome);
+        System.out.println("Venda de R$ "+ valorVenda + "registrada para " +this.getNome());
     }
         public double calcularComissao (){
             double comissao = this.totalVendas * PERCENTUAL_COMISSAO;
@@ -24,7 +27,12 @@ public class AgenteDeViagem extends Colaborador {
         // @Override indica que estamos "substituindo" o método abstrato da classe-mãe
         @Override
         public void exibirDashboard(){
-            System.out.println("--- Dashboard [Agente: " + this.nome + "] ---");
+        JOptionPane.showMessageDialog(null, "--- Dashboard [Agente: " + this.getNome() + "] ---");
+        JOptionPane.showMessageDialog(null, "1. Registrar Venda");
+        JOptionPane.showMessageDialog(null, "2. Calcular Minha Comissão");
+        JOptionPane.showMessageDialog(null, "3. Sair (Logout)");
+        
+        System.out.println("--- Dashboard [Agente: " + this.getNome() + "] ---");
         System.out.println("1. Registrar Venda");
         System.out.println("2. Calcular Minha Comissão");
         System.out.println("3. Sair (Logout)");

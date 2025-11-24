@@ -26,7 +26,7 @@ public class Atendente extends Colaborador {
      */
     @Override
     public void exibirDashboard() {
-        System.out.println("--- Dashboard [Atendente: " + this.nome + "] ---");
+        System.out.println("--- Dashboard [Atendente: " + this.getNome() + "] ---");
         System.out.println("1. Consultar Pacotes de Viagem");
         System.out.println("2. Verificar Reservas de Cliente");
         System.out.println("3. Registrar Novo Cliente");

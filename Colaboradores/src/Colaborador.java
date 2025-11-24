@@ -3,12 +3,12 @@
 
 // Utilizo metodo abstract para que nao haja outro coaborador
 
-public abstract class Colaborador {
+public abstract class Colaborador implements Autenticavel{
    //Tipo Protected para que as classes-Filhas acessem diretamnete
-    protected int id ;
-    protected String nome ;
-    protected String login ;
-    protected String senha;
+    private int id ;
+    private String nome ;
+    private String login ;
+    private String senha;
     //Inicializador de dados
     public Colaborador (int id , String nome, String login , String senha){
     this.id =id;
@@ -29,7 +29,8 @@ public abstract class Colaborador {
     }
 
    // Checar Senhas
-    public boolean checarSenha(String senhaInput){
+   @Override
+    public boolean autenticar(String senhaInput){
         return this.senha.equals(senhaInput);
     }
     //Metodos setters para edição
