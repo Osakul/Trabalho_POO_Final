@@ -1,0 +1,42 @@
+1. Objetivo
+> Desenvolver um programa em java levando em consideração os conceitos vistos em sala de aula: herança, polimorfismo, encapsulamento, agregação, sobrecarga de métodos e interfaces. 
+
+2. Grupos o O trabalho deve ser desenvolvido em:
+> Grupos de até 05 (cinco) alunos. 
+
+3. Pontuação
+- O trabalho terá um valor de 4,0 (Quatro) pontos. 
+>  ATÉ 4 (quatro) pontos para: organização e qualidade do código produzido. Além da análise do domínio do projeto por meio da avaliação do vídeo explicando o projeto. 
+> Deve ser gravado um vídeo da tela do computador (pode ser usado o OBS Studio) explicando todo o código e a aplicação. O vídeo pode ser feito por apenas um integrante da equipe. 
+
+4. Critérios de Avaliação
+> Clareza, objetividade e criatividade no desenvolvimento do código. 
+> Aplicação dos conceitos vistos em sala de aula, o que irá resultar em uma aplicação funcional, com bom desempenho e atendendo aos seus objetivos. 
+> Domínio do projeto por meio da gravação do vídeo explicando o código. 
+
+5. Entrega do Projeto 
+- Arquivos (código fonte + Vídeo): 
+- Projeto contendo os códigos do programa. 
+- Vídeo com a explicação do código fonte e mostrando a aplicação funcionando.
+- OBS: todos os itens do projeto, podem ser inseridos em um único arquivo .zip
+
+6. Sugestão de Projetos
+> Sistema de Reservas da COP-30 
+> Gerencia de Aeroporto (Controle de vôos) 
+> Gerencia de Restaurante a la carte 
+> Gerencia de Escola de 1o e 2o Graus 
+> Gerencia de uma Construtora (Controle de Vendas de Apartamentos) 
+> Gerencia de Encomendas Expressas 
+> Gerencia de um Escritório de Advocacia (Controle de Processos) 
+> Gerencia de um Hotel 
+> Gerencia de Clube Social 
+> Gerencia de Plano de Saúde 
+> Gerencia de Agência de Turismo 
+> Gerencia de Laboratório de Análises Clínicas 
+> Gerencia de Loja de Acessórios para Carros (Venda de produtos e realização de serviços) 
+> Gerenciamento de Salas de Cinemas 
+> Gerenciamento de Farmácia (Controle de Vendas para Clientes Fidelidade) 
+> Gerenciamento de Vendas em Supermercado 
+> Gerencia de Academia (Controle de Pagamento e Atividades Físicas dos Alunos) 
+
+ As equipes podem escolher uma dessas sugestões, sendo que NÃO PODERÃO HAVER EQUIPES COM O MESMO TEMA DE PROJETO. Caso a equipe tenha intenção de projetar um sistema que não conste na relação acima, poderá fazer. Assim que a equipe decidir o seu projeto, ela deverá colocar o nome de todos os integrantes da sua equipe e o tema escolhido na planilha que está anexada na tarefa! 
