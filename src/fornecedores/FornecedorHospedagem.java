@@ -1,3 +1,4 @@
+// package fornecedores;
 public class FornecedorHospedagem extends Fornecedor {
 
     public FornecedorHospedagem(String nome) {
@@ -6,6 +7,6 @@ public class FornecedorHospedagem extends Fornecedor {
 
     @Override
     public String getDescricao() {
-        return "Fornecedor de Hospedagem: " + nome;
+        return "Fornecedor de Hospedagem: " + name;
     }
 }

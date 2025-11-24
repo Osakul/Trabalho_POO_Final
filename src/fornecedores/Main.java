@@ -3,7 +3,7 @@ package fornecedores;
 import javax.swing.JOptionPane;
 
 public class Main {
-    public static void iniciarSistema(String[] args) {
+    public static void iniciarSistema() {
         SistemaFornecedores sistema = new SistemaFornecedores();
 
         String menu = """

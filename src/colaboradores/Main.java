@@ -2,7 +2,7 @@ package colaboradores;
 import javax.swing.JOptionPane;
 
 public class Main {
-    public static void iniciarSistema(String[] args) {
+    public static void iniciarSistema() {
         //Scanner scanner = new Scanner(System.in);
         SistemaAgencia sistema = new SistemaAgencia();
             //Usuarios de testes
