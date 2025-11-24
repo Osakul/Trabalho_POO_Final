@@ -1,4 +1,4 @@
-
+package colaboradores;
 import javax.swing.JOptionPane;
 
 //Denovo extende a classe Colaboradores par a Classe gerente

@@ -1,4 +1,4 @@
-
+package colaboradores;
 
 
 // Utilizo metodo abstract para que nao haja outro coaborador

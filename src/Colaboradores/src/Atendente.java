@@ -1,3 +1,4 @@
+package colaboradores;
 /**
  * A classe Atendente representa um colaborador com funções
  * de atendimento e consulta.

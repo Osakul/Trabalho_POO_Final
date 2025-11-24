@@ -1,3 +1,5 @@
+package fornecedores;
+
 public class Servico {
     private String nome;
     private boolean ativo;

@@ -1,3 +1,5 @@
+package fornecedores;
+
 public class FornecedorTransporte extends Fornecedor {
 
     public FornecedorTransporte(String nome) {

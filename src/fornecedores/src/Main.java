@@ -1,7 +1,9 @@
+package fornecedores;
+
 import javax.swing.JOptionPane;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void iniciarSistema(String[] args) {
         SistemaFornecedores sistema = new SistemaFornecedores();
 
         String menu = """

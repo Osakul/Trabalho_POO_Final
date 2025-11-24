@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+package fornecedores;
 
 public abstract class Fornecedor {
     protected String nome;
